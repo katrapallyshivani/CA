@@ -1,0 +1,25 @@
+Step 1: Create a Test Plan
+
+Open JMeter and create a new Test Plan: Right-click "Test Plan" > Add > Threads (Users) > Thread Group.
+Step 2: Create a Thread Group and Add Number of Threads (Count is 1)
+
+In the Thread Group, set the Number of Threads (users) to 1.
+Step 3: Add HTTP Request (Use https protocol) and URL as https://reqres.in/
+
+Right-click on the Thread Group > Add > Sampler > HTTP Request.
+In the HTTP Request sampler, set the Protocol to "https" and the Server Name or IP to "reqres.in".
+Step 4: Add Response Assertion
+
+Right-click on the HTTP Request sampler > Add > Assertions > Response Assertion.
+Step 5: Use Text Response to validate texts present on the Web Page
+
+In the Response Assertion, select the "Text Response" radio button.
+Enter the text that you want to validate in the "Patterns to Test" field. For example, if you want to validate the presence of the word "success" in the response, enter "success" in the "Patterns to Test" field.
+Step 6: Add assertion to validate Response Code
+
+In the Response Assertion, select the "Response Code" radio button.
+Enter the expected response code that you want to validate. For example, you can enter "200" to validate that the response code is 200 (OK).
+
+Step 7: Run the Script and Analyze the test results
+
+Save the test plan and click the green "Play" button to run the test.
